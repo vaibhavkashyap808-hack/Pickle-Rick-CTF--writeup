@@ -50,7 +50,7 @@ To discover hidden directories, Gobuster was used:
  <img src="screenshots/Gobuster command.png" width="600">
 gobuster dir -u http://<TARGET-IP> -w /usr/share/wordlists/dirb/common.txt
  
-
+<img src="screenshots/nmap specific script command.png" width="600">
 Discovered Paths:
 •	/robots.txt 
 •	/login.php 
@@ -71,7 +71,7 @@ Successfully logged into the application.
 Phase 5: Command Injection
 After login, a command execution panel was discovered.
  
-
+<img src="screenshots/command panel.png" width="600">
 Test:
 whoami
 Output:
