@@ -22,6 +22,7 @@ Nmap Scan
 The first step was to perform network scanning using Nmap:
  
 
+<img src="screenshots/nmap.png" width="600">
 
 nmap -sC -sV <TARGET-IP>
 Findings:
