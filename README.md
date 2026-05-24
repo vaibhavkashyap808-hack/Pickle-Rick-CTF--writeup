@@ -1,6 +1,9 @@
 # Pickle-Rick-CTF--writeup
+
 A beginner-friendly TryHackMe Pickle Rick CTF walkthrough demonstrating web enumeration, command injection, Linux navigation, and privilege escalation techniques.
+
 This repository documents my walkthrough of the Pickle Rick CTF challenge from TryHackMe.
+
 The objective of this room is to gain access to the target machine, identify vulnerabilities, and retrieve all three hidden ingredients.
 
  Objective
