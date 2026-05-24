@@ -22,7 +22,7 @@ Nmap Scan
 The first step was to perform network scanning using Nmap:
  
 
-<img src="screenshots/nmap.png" width="600">
+<img src="screenshots/nmap.png" width="800">
 
 nmap -sC -sV <TARGET-IP>
 Findings:
@@ -34,7 +34,7 @@ Nmap helped identify open ports and running services which are critical entry po
  Phase 2: Web Enumeration
 The web application was explored via browser on port 80.
  
-<img src="screenshots/website front page.png" width="600">
+<img src="screenshots/website front page.png" width="800">
 Observations:
 •	A Rick and Morty themed webpage was discovered 
 •	No direct input fields initially visible 
@@ -47,10 +47,10 @@ Sensitive information disclosure in HTML source code can aid attackers in gainin
  Phase 3: Directory Bruteforcing
 To discover hidden directories, Gobuster was used:
 
- <img src="screenshots/Gobuster command.png" width="600">
+ <img src="screenshots/Gobuster command.png" width="800">
 gobuster dir -u http://<TARGET-IP> -w /usr/share/wordlists/dirb/common.txt
  
-<img src="screenshots/nmap specific script command.png" width="600">
+<img src="screenshots/nmap specific script command.png" width="800">
 Discovered Paths:
 •	/robots.txt 
 •	/login.php 
@@ -71,7 +71,7 @@ Successfully logged into the application.
 Phase 5: Command Injection
 After login, a command execution panel was discovered.
  
-<img src="screenshots/command panel.png" width="600">
+<img src="screenshots/command panel.png" width="800">
 Test:
 whoami
 Output:
