@@ -34,7 +34,7 @@ Nmap helped identify open ports and running services which are critical entry po
  Phase 2: Web Enumeration
 The web application was explored via browser on port 80.
  
-
+<img src="screenshots/website front page.png" width="600">
 Observations:
 •	A Rick and Morty themed webpage was discovered 
 •	No direct input fields initially visible 
@@ -46,7 +46,8 @@ Sensitive information disclosure in HTML source code can aid attackers in gainin
 
  Phase 3: Directory Bruteforcing
 To discover hidden directories, Gobuster was used:
- 
+
+ <img src="screenshots/Gobuster command.png" width="600">
 gobuster dir -u http://<TARGET-IP> -w /usr/share/wordlists/dirb/common.txt
  
 
